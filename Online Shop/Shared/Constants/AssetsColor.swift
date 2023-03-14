@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+enum AssetsColor: String {
+    case mainBackground
+    case green
+    case white
+    case red
+    case blue
+    case yellow
+    case gray90
+    case gray5C
+}

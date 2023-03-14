@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum AssetsImage: String {
+    case user
+    case passwordShowed
+    case passwordNoShowed
+}

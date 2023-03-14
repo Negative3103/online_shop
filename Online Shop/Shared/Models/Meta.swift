@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Meta: Codable {
+    let itemsPerPage: Int?
+    let totalItems: Int?
+    let currentPage: Int?
+    let totalPages: Int?
+}

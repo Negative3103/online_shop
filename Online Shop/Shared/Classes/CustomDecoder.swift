@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+final class CustomDecoder: JSONDecoder {
+    override init() {
+        super.init()
+        keyDecodingStrategy = .convertFromSnakeCase
+    }
+}

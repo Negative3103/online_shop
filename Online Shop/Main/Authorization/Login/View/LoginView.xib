@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Online_Shop" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="fda-bp-Dry" id="4IU-6Y-bGe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fda-bp-Dry" customClass="LoginView" customModule="Online_Shop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQV-e6-HRw">
+                    <rect key="frame" x="87.333333333333329" y="159" width="218.33333333333337" height="34.333333333333343"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="28"/>
+                    <color key="textColor" name="161826"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="GmO-WB-rNN">
+                    <rect key="frame" x="42" y="270.33333333333331" width="309" height="103"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UX8-pW-e4R">
+                            <rect key="frame" x="0.0" y="0.0" width="309" height="34"/>
+                            <color key="backgroundColor" name="E8E8E8"/>
+                            <color key="textColor" name="161826"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hlb-SN-OcO" customClass="UIShowHideTextField" customModule="Online_Shop" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="69" width="309" height="34"/>
+                            <color key="backgroundColor" name="E8E8E8"/>
+                            <color key="textColor" name="161826"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gt-qX-5TO" customClass="Button" customModule="Online_Shop" customModuleProvider="target">
+                    <rect key="frame" x="42" y="408.33333333333331" width="309" height="46"/>
+                    <color key="backgroundColor" name="4E55D7"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="48g-qO-3b8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Login"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                            <color key="value" name="4E55D7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                            <color key="value" red="0.30588235289999999" green="0.33333333329999998" blue="0.84313725490000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="pvZ-VN-DY1"/>
+            <constraints>
+                <constraint firstItem="GmO-WB-rNN" firstAttribute="leading" secondItem="pvZ-VN-DY1" secondAttribute="leading" constant="42" id="9wQ-ln-t5y"/>
+                <constraint firstItem="8gt-qX-5TO" firstAttribute="top" secondItem="GmO-WB-rNN" secondAttribute="bottom" constant="35" id="KDY-MH-CMm"/>
+                <constraint firstItem="LQV-e6-HRw" firstAttribute="top" secondItem="pvZ-VN-DY1" secondAttribute="top" constant="100" id="duq-aT-XOm"/>
+                <constraint firstItem="pvZ-VN-DY1" firstAttribute="trailing" secondItem="GmO-WB-rNN" secondAttribute="trailing" constant="42" id="rQF-YS-tx8"/>
+                <constraint firstItem="GmO-WB-rNN" firstAttribute="top" secondItem="LQV-e6-HRw" secondAttribute="bottom" constant="77" id="t9a-oU-PUm"/>
+                <constraint firstItem="LQV-e6-HRw" firstAttribute="centerX" secondItem="fda-bp-Dry" secondAttribute="centerX" id="twM-xA-Z5t"/>
+                <constraint firstItem="8gt-qX-5TO" firstAttribute="leading" secondItem="pvZ-VN-DY1" secondAttribute="leading" constant="42" id="uA6-Lu-8Lu"/>
+                <constraint firstItem="pvZ-VN-DY1" firstAttribute="trailing" secondItem="8gt-qX-5TO" secondAttribute="trailing" constant="42" id="vbJ-Ym-VXa"/>
+            </constraints>
+            <connections>
+                <outlet property="nameTextField" destination="UX8-pW-e4R" id="XD9-E4-ghj"/>
+                <outlet property="passwordTextField" destination="hlb-SN-OcO" id="PLc-Dm-3oQ"/>
+            </connections>
+            <point key="canvasLocation" x="332" y="-265"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="161826">
+            <color red="0.086274509803921567" green="0.094117647058823528" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="4E55D7">
+            <color red="0.30588235294117649" green="0.33333333333333331" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="E8E8E8">
+            <color red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
