@@ -18,7 +18,7 @@ final class FavouriteCoordinator: Coordinator {
     
     internal func start() {
         let vc = FavouriteViewController()
-//        vc.tabBarItem = UITabBarItem(title: "main", image: UIImage.appImage(.main), tag: 0)
+        vc.tabBarItem = UITabBarItem(title: "", image: UIImage.appImage(.favourite), tag: 1)
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }

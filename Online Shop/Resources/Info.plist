@@ -36,5 +36,7 @@ Montserrat-ThinItalic.ttf</string>
 		<string>Montserrat-ExtraBoldItalic.ttf</string>
 		<string>Montserrat-BoldItalic.ttf</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need this so that you can share photos and videos from your photo library.</string>
 </dict>
 </plist>

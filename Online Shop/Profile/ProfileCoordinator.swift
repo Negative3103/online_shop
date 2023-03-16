@@ -18,7 +18,7 @@ final class ProfileCoordinator: Coordinator {
     
     internal func start() {
         let vc = ProfileViewController()
-//        vc.tabBarItem = UITabBarItem(title: "main".localized, image: UIImage.appImage(.main), tag: 0)
+        vc.tabBarItem = UITabBarItem(title: "", image: UIImage.appImage(.profile), tag: 4)
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }

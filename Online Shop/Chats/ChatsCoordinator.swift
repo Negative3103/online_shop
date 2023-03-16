@@ -18,7 +18,7 @@ final class ChatsCoordinator: Coordinator {
     
     internal func start() {
         let vc = ChatsViewController()
-//        vc.tabBarItem = UITabBarItem(title: "main".localized, image: UIImage.appImage(.main), tag: 0)
+        vc.tabBarItem = UITabBarItem(title: "", image: UIImage.appImage(.chats), tag: 3)
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }

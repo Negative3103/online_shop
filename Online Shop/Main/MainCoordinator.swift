@@ -17,10 +17,10 @@ final class MainCoordinator: Coordinator {
     }
     
     func start() {
-//        let vc = MainViewController()
-//        vc.tabBarItem = UITabBarItem(title: "main".localized, image: UIImage.appImage(.main), tag: 0)
-//        vc.coordinator = self
-//        navigationController.pushViewController(vc, animated: false)
+        let vc = MainViewController()
+        vc.tabBarItem = UITabBarItem(title: "", image: UIImage.appImage(.main), tag: 0)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: false)
     }
     
     func pushLoginVC(viewController: UIViewController) {

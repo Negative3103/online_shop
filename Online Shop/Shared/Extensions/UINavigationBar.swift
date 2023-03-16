@@ -9,6 +9,8 @@ import UIKit
 
 extension UINavigationBar {
     func setup() {
+        barStyle = .default
+        barTintColor = UIColor.white
         tintColor = UIColor.white
         titleTextAttributes = [.foregroundColor: UIColor.white]
         largeTitleTextAttributes = [.foregroundColor: UIColor.white]

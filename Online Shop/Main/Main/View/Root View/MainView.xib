@@ -16,6 +16,14 @@
         <view contentMode="scaleToFill" id="dNl-8I-BRN" customClass="MainView" customModule="Online_Shop" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUV-7C-IIR">
+                    <rect key="frame" x="147" y="16" width="75" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="k3b-rg-DX5"/>
             <point key="canvasLocation" x="379" y="-251"/>
         </view>

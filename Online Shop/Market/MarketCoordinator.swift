@@ -18,7 +18,7 @@ final class MarketCoordinator: Coordinator {
     
     internal func start() {
         let vc = MarketViewController()
-//        vc.tabBarItem = UITabBarItem(title: "main".localized, image: UIImage.appImage(.main), tag: 0)
+        vc.tabBarItem = UITabBarItem(title: "", image: UIImage.appImage(.market), tag: 2)
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }

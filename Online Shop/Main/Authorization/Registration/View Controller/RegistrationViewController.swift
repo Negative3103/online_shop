@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 final class RegistrationViewController: UIViewController , AlertViewController, ViewSpecificController {
     
@@ -17,6 +18,9 @@ final class RegistrationViewController: UIViewController , AlertViewController, 
     private let viewModel = RegistrationViewModel()
     internal var coordinator: MainCoordinator?
     internal var isLoading: Bool = false
+    
+    //MARK: - Attributes
+    private var loginArray = [String]()
     
     //MARK: - Actions
     @IBAction func buttonAction(_ sender: UIButton) {
@@ -55,7 +59,25 @@ extension RegistrationViewController {
     }
     
     private func registration() {
-        guard let firstName = view().firstNameTextField.text , !firstName.isEmpty , let email = view().emailTextField.text , let password = view().passwordTextField.text, !password.isEmpty else {
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appdelegate.persistentContainer.viewContext
+        let login = NSEntityDescription.insertNewObject(forEntityName: "UserInfo", into: context)
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserInfo")
+        fetchRequest.returnsObjectsAsFaults = false
+        
+        do{
+            let results = try context.fetch(fetchRequest)
+            for result in results as! [NSManagedObject]{
+                if let login = result.value(forKey: "login") as? String{
+                    self.loginArray.append(login)
+                }
+            }
+        }
+        catch{
+            print("error")
+        }
+        
+        guard let firstName = view().firstNameTextField.text , !firstName.isEmpty , let email = view().emailTextField.text , let lastName = view().lastNameTextField.text, !lastName.isEmpty else {
             showAlert(title: "Fill all!", message: "")
             return
         }
@@ -65,10 +87,11 @@ extension RegistrationViewController {
             return
         }
         
-        if firstName == KeychainAccessCheck.login() {
+        if loginArray.contains(firstName) {
             showAlert(title: "A user with the same name already exists", message: "")
         } else {
-            KeychainAccessCheck.saveAccount(account: Account(login: firstName, accountNumber: Int(password), email: email))
+            login.setValue(firstName, forKey: "login")
+            KeychainAccessCheck.saveAccount(account: Account(login: firstName, accountNumber: Int(lastName), email: email))
             resetTabBar()
         }
     }

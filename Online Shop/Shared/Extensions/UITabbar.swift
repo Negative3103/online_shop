@@ -10,5 +10,10 @@ import UIKit
 extension UITabBar {
     func setup() {
         tintColor = UIColor.appColor(.gray90)
+        backgroundColor = .white
+        layer.maskedCorners = [.layerMaxXMinYCorner , .layerMinXMinYCorner]
+        clipsToBounds = true
+        layer.cornerRadius = 24
+        
     }
 }

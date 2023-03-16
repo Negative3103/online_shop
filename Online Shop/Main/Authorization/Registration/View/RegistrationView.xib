@@ -48,14 +48,14 @@
                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                             <textInputTraits key="textInputTraits" textContentType="name"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r1x-LO-dNN">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r1x-LO-dNN">
                             <rect key="frame" x="0.0" y="69" width="309" height="34"/>
                             <color key="backgroundColor" name="E8E8E8"/>
                             <color key="textColor" name="161826"/>
                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                             <textInputTraits key="textInputTraits" textContentType="email"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Drh-x1-mlH">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Drh-x1-mlH">
                             <rect key="frame" x="0.0" y="138" width="309" height="34"/>
                             <color key="backgroundColor" name="E8E8E8"/>
                             <color key="textColor" name="161826"/>
@@ -89,17 +89,17 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SSV-aM-Pcd">
-                    <rect key="frame" x="40" y="541.33333333333337" width="153.66666666666666" height="23"/>
+                    <rect key="frame" x="40.000000000000014" y="541.33333333333337" width="184.33333333333337" height="26"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woX-GS-Oo1">
-                            <rect key="frame" x="0.0" y="0.0" width="115.66666666666667" height="23"/>
-                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="9"/>
+                            <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="26"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                             <color key="textColor" name="808080"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ4-s7-ICB" customClass="Button" customModule="Online_Shop" customModuleProvider="target">
-                            <rect key="frame" x="123.66666666666666" y="0.0" width="30" height="23"/>
-                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="9"/>
+                            <rect key="frame" x="149.33333333333334" y="0.0" width="35" height="26"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Log in">
                                 <color key="titleColor" name="purple"/>
@@ -112,12 +112,12 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ISU-va-cg7">
-                    <rect key="frame" x="100" y="634.33333333333337" width="193" height="81.666666666666629"/>
+                    <rect key="frame" x="100" y="637.33333333333337" width="193" height="81.666666666666629"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHO-qI-qnC">
                             <rect key="frame" x="0.0" y="0.0" width="193" height="24.333333333333332"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
                             <state key="normal" title="Sign in with Google" image="google">
                                 <color key="titleColor" name="000000"/>
                             </state>
@@ -125,7 +125,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naY-Ya-Rhr">
                             <rect key="frame" x="0.0" y="59.333333333333265" width="193" height="22.333333333333336"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
                             <state key="normal" title="Sign in with Google" image="apple">
                                 <color key="titleColor" name="000000"/>
                             </state>
@@ -151,9 +151,9 @@
                 <constraint firstItem="Agh-QY-JfH" firstAttribute="top" secondItem="hTL-Uw-fxt" secondAttribute="bottom" constant="35" id="zFd-JM-8wv"/>
             </constraints>
             <connections>
-                <outlet property="emailTextField" destination="r1x-LO-dNN" id="5U0-LP-9nZ"/>
+                <outlet property="emailTextField" destination="Drh-x1-mlH" id="Ld3-HF-jY6"/>
                 <outlet property="firstNameTextField" destination="Sx8-iI-MJy" id="lVJ-8d-Esu"/>
-                <outlet property="passwordTextField" destination="Drh-x1-mlH" id="zSD-dy-kNW"/>
+                <outlet property="lastNameTextField" destination="r1x-LO-dNN" id="d3b-z5-fGk"/>
             </connections>
             <point key="canvasLocation" x="332" y="-265"/>
         </view>

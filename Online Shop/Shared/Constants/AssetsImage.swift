@@ -8,7 +8,11 @@
 import Foundation
 
 enum AssetsImage: String {
-    case user
+    case main
+    case favourite
+    case market
+    case chats
+    case profile
     case passwordShowed
     case passwordNoShowed
 }
