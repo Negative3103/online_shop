@@ -9,3 +9,14 @@ import UIKit
 
 extension UIView: ReusableView { }
 
+extension UIView {
+    @IBInspectable var viewRadius: CGFloat {
+        set {
+            layer.masksToBounds = true
+            layer.cornerRadius = newValue
+        }
+        get {
+            return layer.cornerRadius
+        }
+    }
+}

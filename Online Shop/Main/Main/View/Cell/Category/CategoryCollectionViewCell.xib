@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="Ogr-A2-k4K" customClass="CategoryCollectionViewCell" customModule="Online_Shop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="68f-jc-chH">
+                <rect key="frame" x="0.0" y="0.0" width="42" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QSN-eW-JdC">
+                        <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                        <color key="backgroundColor" name="whiteEF4"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="msH-aZ-9uA"/>
+                            <constraint firstAttribute="height" constant="42" id="z1X-Eq-Vb3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0H-hP-6FS">
+                        <rect key="frame" x="0.0" y="47.666666666666664" width="42" height="12.333333333333336"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                        <color key="textColor" red="0.65098039220000004" green="0.65490196079999996" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="W0H-hP-6FS" secondAttribute="bottom" id="46v-ke-Ik0"/>
+                    <constraint firstAttribute="trailing" secondItem="W0H-hP-6FS" secondAttribute="trailing" id="9uu-IK-WfW"/>
+                    <constraint firstAttribute="trailing" secondItem="QSN-eW-JdC" secondAttribute="trailing" id="KRJ-5r-ADX"/>
+                    <constraint firstItem="W0H-hP-6FS" firstAttribute="leading" secondItem="68f-jc-chH" secondAttribute="leading" id="KXa-Wp-vy8"/>
+                    <constraint firstAttribute="bottom" secondItem="W0H-hP-6FS" secondAttribute="bottom" id="LhV-lI-Qut"/>
+                    <constraint firstItem="QSN-eW-JdC" firstAttribute="top" secondItem="68f-jc-chH" secondAttribute="top" id="Qr0-pQ-5Yl"/>
+                    <constraint firstItem="QSN-eW-JdC" firstAttribute="leading" secondItem="68f-jc-chH" secondAttribute="leading" id="x0D-o9-PRG"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="QSN-eW-JdC" id="UEd-Ms-z7p"/>
+                <outlet property="nameLabel" destination="W0H-hP-6FS" id="q90-Hk-GDf"/>
+            </connections>
+            <point key="canvasLocation" x="148" y="-8"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="whiteEF4">
+            <color red="0.93333333333333335" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -23,4 +23,5 @@ enum AlertViewSubtitles: String {
 
 enum MainConstants: String {
     case service = "com.negative.Online-Shop"
+    case link = "https://run.mocky.io/v3/"
 }

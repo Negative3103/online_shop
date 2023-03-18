@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LatestCollectionViewCell" id="zpd-Y6-9kZ" customClass="LatestCollectionViewCell" customModule="Online_Shop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0U8-Gn-JtD">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BWO-ng-CrS">
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="149"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlq-Ea-MT9">
+                        <rect key="frame" x="7" y="89" width="35" height="12"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clB-IT-Zmn">
+                                <rect key="frame" x="0.0" y="0.0" width="35" height="12"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="6"/>
+                                <color key="textColor" name="black04"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="viewRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8980392157" green="0.91372549020000005" blue="0.93725490199999995" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="clB-IT-Zmn" firstAttribute="top" secondItem="qlq-Ea-MT9" secondAttribute="top" id="EE1-E6-uJX"/>
+                            <constraint firstItem="clB-IT-Zmn" firstAttribute="leading" secondItem="qlq-Ea-MT9" secondAttribute="leading" id="Ldh-fM-3E8"/>
+                            <constraint firstAttribute="trailing" secondItem="clB-IT-Zmn" secondAttribute="trailing" id="Ylq-PA-Gu4"/>
+                            <constraint firstAttribute="height" constant="12" id="mQw-oB-MRz"/>
+                            <constraint firstAttribute="bottom" secondItem="clB-IT-Zmn" secondAttribute="bottom" id="tBp-Qf-afS"/>
+                            <constraint firstAttribute="width" constant="35" id="ugt-Hg-6Jb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="viewRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5k-cN-HtU">
+                        <rect key="frame" x="7" y="132" width="23" height="10"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="8"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1g-2X-WCo">
+                        <rect key="frame" x="89" y="124" width="20" height="20"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN8-64-mje">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="plus">
+                                    <color key="titleColor" red="0.32941176470588235" green="0.33333333333333331" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.9137254901960784" blue="0.93725490196078431" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Gwi-s3-JmK"/>
+                            <constraint firstAttribute="bottom" secondItem="CN8-64-mje" secondAttribute="bottom" id="O8U-iW-9cV"/>
+                            <constraint firstAttribute="height" constant="20" id="PnR-O3-eYp"/>
+                            <constraint firstAttribute="trailing" secondItem="CN8-64-mje" secondAttribute="trailing" id="bkU-sF-QPP"/>
+                            <constraint firstItem="CN8-64-mje" firstAttribute="top" secondItem="V1g-2X-WCo" secondAttribute="top" id="jYq-Ef-rGe"/>
+                            <constraint firstItem="CN8-64-mje" firstAttribute="leading" secondItem="V1g-2X-WCo" secondAttribute="leading" id="pG0-A5-m5e"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrM-oa-tO5">
+                        <rect key="frame" x="7.0000000000000018" y="106" width="25.666666666666671" height="11"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BWO-ng-CrS" firstAttribute="top" secondItem="0U8-Gn-JtD" secondAttribute="top" id="0Fs-7u-g1x"/>
+                    <constraint firstItem="qlq-Ea-MT9" firstAttribute="leading" secondItem="0U8-Gn-JtD" secondAttribute="leading" constant="7" id="3dP-5v-LUZ"/>
+                    <constraint firstItem="u5k-cN-HtU" firstAttribute="top" secondItem="hrM-oa-tO5" secondAttribute="bottom" constant="15" id="7Q8-3Y-8sf"/>
+                    <constraint firstItem="hrM-oa-tO5" firstAttribute="leading" secondItem="0U8-Gn-JtD" secondAttribute="leading" constant="7" id="8Il-Ot-0LS"/>
+                    <constraint firstItem="hrM-oa-tO5" firstAttribute="top" secondItem="qlq-Ea-MT9" secondAttribute="bottom" constant="5" id="Gky-KC-jDa"/>
+                    <constraint firstItem="BWO-ng-CrS" firstAttribute="leading" secondItem="0U8-Gn-JtD" secondAttribute="leading" id="Isc-o2-Z2n"/>
+                    <constraint firstAttribute="bottom" secondItem="V1g-2X-WCo" secondAttribute="bottom" constant="5" id="Lxa-zC-N1l"/>
+                    <constraint firstAttribute="trailing" secondItem="BWO-ng-CrS" secondAttribute="trailing" id="P5t-jA-962"/>
+                    <constraint firstAttribute="trailing" secondItem="V1g-2X-WCo" secondAttribute="trailing" constant="5" id="fJ5-RN-xLY"/>
+                    <constraint firstItem="u5k-cN-HtU" firstAttribute="leading" secondItem="0U8-Gn-JtD" secondAttribute="leading" constant="7" id="gxN-lZ-rDu"/>
+                    <constraint firstAttribute="bottom" secondItem="BWO-ng-CrS" secondAttribute="bottom" id="qKh-9D-MOi"/>
+                    <constraint firstAttribute="bottom" secondItem="u5k-cN-HtU" secondAttribute="bottom" constant="7" id="uZ3-G7-ClJ"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="viewRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="addView" destination="V1g-2X-WCo" id="ZV8-WP-C71"/>
+                <outlet property="categoryLabel" destination="clB-IT-Zmn" id="0mp-y2-laI"/>
+                <outlet property="imageView" destination="BWO-ng-CrS" id="Ayp-f1-vDR"/>
+                <outlet property="nameLabel" destination="hrM-oa-tO5" id="JqD-Nq-Zfe"/>
+                <outlet property="priceLabel" destination="u5k-cN-HtU" id="fC0-AM-6Cj"/>
+            </connections>
+            <point key="canvasLocation" x="106.87022900763358" y="32.74647887323944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus" width="8" height="8"/>
+        <namedColor name="black04">
+            <color red="0.015686274509803921" green="0.015686274509803921" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

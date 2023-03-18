@@ -16,3 +16,11 @@ struct JSONData<T: Decodable>: Decodable {
     
     let data: T?
 }
+
+struct JSONLatest<T: Decodable>: Decodable {
+    let latest: T
+}
+
+struct JSONFlash<T: Decodable>: Decodable {
+    let flashSale: T
+}
