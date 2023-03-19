@@ -25,7 +25,7 @@ extension ViewModelProtocol where Self: UIViewController {
             self.view.isUserInteractionEnabled = false
             self.customSpinnerView.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(self.customSpinnerView)
-            self.customSpinnerView.tintColor = UIColor.appColor(.green)
+            self.customSpinnerView.tintColor = UIColor.appColor(.purple)
             NSLayoutConstraint.activate([
                 self.customSpinnerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
                 self.customSpinnerView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)

@@ -14,7 +14,6 @@ final class MarketViewController: UIViewController, ViewSpecificController, Aler
     
     //MARK: - Services
     internal var customSpinnerView = CustomSpinnerView()
-//    private let viewModel = MarketViewModel()
     internal var coordinator: MarketCoordinator?
     internal var isLoading: Bool = false
     
@@ -30,14 +29,11 @@ final class MarketViewController: UIViewController, ViewSpecificController, Aler
 }
 
 //MARK: - Networking
-//extension MarketViewController: MarketViewModelProtocol {
-//
-//}
 
 //MARK: - Other funcs
 extension MarketViewController {
     private func appearanceSettings() {
-//        viewModel.delegate = self
+        navigationItem.title = "Market"
         navigationController?.navigationBar.setup()
     }
 }

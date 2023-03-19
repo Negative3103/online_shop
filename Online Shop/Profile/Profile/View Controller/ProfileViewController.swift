@@ -16,7 +16,6 @@ final class ProfileViewController: UIViewController, ViewSpecificController, Ale
     
     //MARK: - Services
     internal var customSpinnerView = CustomSpinnerView()
-//    private let viewModel = ProfileViewModel()
     internal var coordinator: ProfileCoordinator?
     internal var isLoading: Bool = false
     
@@ -46,28 +45,25 @@ final class ProfileViewController: UIViewController, ViewSpecificController, Ale
 }
 
 //MARK: - Networking
-//extension ProfileViewController: ProfileViewModelProtocol {
-//
-//}
 
 //MARK: - Other funcs
 extension ProfileViewController {
     private func appearanceSettings() {
-//        viewModel.delegate = self
+        navigationItem.title = "Profile"
         navigationController?.navigationBar.setup()
     }
     
     private func saveImage(image: UIImage) {
         guard let data = image.jpegData(compressionQuality: 0.5) else { return }
         let encoded = try! PropertyListEncoder().encode(data)
-        UserDefaults.standard.set(encoded, forKey: "KEY")
+        UserDefaults.standard.set(encoded, forKey: "UserImage")
     }
 
     private func setupImage() {
-        guard let data = UserDefaults.standard.data(forKey: "KEY") else { return }
+        guard let data = UserDefaults.standard.data(forKey: "UserImage") else { return }
         let decoded = try! PropertyListDecoder().decode(Data.self, from: data)
         let image = UIImage(data: decoded)
-        view().profileImageView.image = image ?? UIImage()
+        view().profileImageView.image = image ?? UIImage.appImage(.user)
     }
     
     private func logout() {

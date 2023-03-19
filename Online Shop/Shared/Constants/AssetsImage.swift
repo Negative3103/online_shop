@@ -8,6 +8,7 @@
 import Foundation
 
 enum AssetsImage: String {
+    case menu
     case main
     case favourite
     case market
@@ -15,4 +16,6 @@ enum AssetsImage: String {
     case profile
     case passwordShowed
     case passwordNoShowed
+    case user
+    case arrowDown
 }

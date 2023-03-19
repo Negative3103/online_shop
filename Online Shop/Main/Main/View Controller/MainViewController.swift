@@ -29,6 +29,7 @@ final class MainViewController: UIViewController, ViewSpecificController, AlertV
     override func viewDidLoad() {
         super.viewDidLoad()
         appearanceSettings()
+        setupNavBar()
         viewModel.getLatest()
         viewModel.getFlash()
     }
@@ -57,5 +58,37 @@ extension MainViewController {
         categoryDataProvider.collectionView = view().categoryCollectionVoew
         latestDataProvider.collectionView = view().latestCollectionView
         flashDataProvider.collectionView = view().flashCollectionView
+    }
+    
+    private func setupNavBar() {
+        navigationItem.title = "Trade by bata"
+        
+        let leftButton = UIButton(type: .system)
+        leftButton.setImage(UIImage.appImage(.menu), for: .normal)
+        leftButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
+        leftButton.sizeToFit()
+        leftButton.tintColor = .black
+        leftButton.isUserInteractionEnabled = false
+        let leftBarButton = UIBarButtonItem(customView: leftButton)
+        navigationItem.leftBarButtonItem = leftBarButton
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        imageView.image = .appImage(.user)
+    
+        let rightButton = UIButton(type: .system)
+        rightButton.frame = CGRect(x: -15, y: 40, width: 50, height: 15)
+        rightButton.setImage(UIImage.appImage(.arrowDown), for: .normal)
+        rightButton.setTitle("Location", for: .normal)
+        rightButton.titleLabel?.font = .systemFont(ofSize: 10, weight: .regular)
+        rightButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        rightButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+        rightButton.setTitleColor(UIColor.black, for: .normal)
+        rightButton.tintColor = UIColor.black
+        rightButton.sizeToFit()
+        rightButton.semanticContentAttribute = .forceRightToLeft
+        
+        imageView.addSubview(rightButton)
+        let rightBarButton = UIBarButtonItem(customView: imageView)
+        navigationItem.rightBarButtonItem = rightBarButton
     }
 }

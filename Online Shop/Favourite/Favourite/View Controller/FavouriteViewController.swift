@@ -14,7 +14,6 @@ final class FavouriteViewController: UIViewController, ViewSpecificController, A
     
     //MARK: - Services
     internal var customSpinnerView = CustomSpinnerView()
-//    private let viewModel = MainViewModel()
     internal var coordinator: FavouriteCoordinator?
     internal var isLoading: Bool = false
     
@@ -30,14 +29,11 @@ final class FavouriteViewController: UIViewController, ViewSpecificController, A
 }
 
 //MARK: - Networking
-//extension FavouriteViewController: FavouriteViewModelProtocol {
-//
-//}
 
 //MARK: - Other funcs
 extension FavouriteViewController {
     private func appearanceSettings() {
-//        viewModel.delegate = self
+        navigationItem.title = "Favourite"
         navigationController?.navigationBar.setup()
     }
 }

@@ -59,7 +59,6 @@
 		D1C0B9EE29C0FCE200883EC5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0B9ED29C0FCE200883EC5 /* ProfileViewController.swift */; };
 		D1C0B9F029C0FCE700883EC5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0B9EF29C0FCE700883EC5 /* ProfileView.swift */; };
 		D1C0B9F229C0FCEA00883EC5 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1C0B9F129C0FCEA00883EC5 /* ProfileView.xib */; };
-		D1C0B9F429C0FCF000883EC5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0B9F329C0FCF000883EC5 /* ProfileViewModel.swift */; };
 		D1C0B9FD29C0FD3500883EC5 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0B9FC29C0FD3500883EC5 /* ChatsViewController.swift */; };
 		D1C0B9FF29C0FD3800883EC5 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0B9FE29C0FD3800883EC5 /* ChatsView.swift */; };
 		D1C0BA0129C0FD3B00883EC5 /* ChatsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1C0BA0029C0FD3B00883EC5 /* ChatsView.xib */; };
@@ -162,7 +161,6 @@
 		D1C0B9ED29C0FCE200883EC5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D1C0B9EF29C0FCE700883EC5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D1C0B9F129C0FCEA00883EC5 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
-		D1C0B9F329C0FCF000883EC5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		D1C0B9FC29C0FD3500883EC5 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		D1C0B9FE29C0FD3800883EC5 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
 		D1C0BA0029C0FD3B00883EC5 /* ChatsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatsView.xib; sourceTree = "<group>"; };
@@ -520,7 +518,6 @@
 		D1C0B9EA29C0FCC800883EC5 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				D1C0B9F329C0FCF000883EC5 /* ProfileViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -867,7 +864,6 @@
 				D1C0B9E429C0FC3900883EC5 /* MainView.swift in Sources */,
 				D12C6D4229C4E94000184B3B /* CategoryModel.swift in Sources */,
 				D12C6D3C29C4E70500184B3B /* Headers.swift in Sources */,
-				D1C0B9F429C0FCF000883EC5 /* ProfileViewModel.swift in Sources */,
 				D1CCEFFE29BF4FB90014C453 /* UIColor.swift in Sources */,
 				D1CCF01529BF51330014C453 /* ViewSpecificController.swift in Sources */,
 				D15334B129C08FCD004D4480 /* RegistrationView.swift in Sources */,

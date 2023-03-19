@@ -14,7 +14,6 @@ final class ChatsViewController: UIViewController, ViewSpecificController, Alert
     
     //MARK: - Services
     internal var customSpinnerView = CustomSpinnerView()
-//    private let viewModel = ChatsViewModel()
     internal var coordinator: ChatsCoordinator?
     internal var isLoading: Bool = false
     
@@ -30,14 +29,11 @@ final class ChatsViewController: UIViewController, ViewSpecificController, Alert
 }
 
 //MARK: - Networking
-//extension ChatsViewController: ChatsViewModelProtocol {
-//
-//}
 
 //MARK: - Other funcs
 extension ChatsViewController {
     private func appearanceSettings() {
-//        viewModel.delegate = self
+        navigationItem.title = "Chats"
         navigationController?.navigationBar.setup()
     }
 }
