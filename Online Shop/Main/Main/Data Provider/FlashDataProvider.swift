@@ -42,7 +42,7 @@ final class FlashDataProvider: NSObject , UICollectionViewDelegate , UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.frame.width
+        let width = collectionView.frame.width - 20
         let itemsCount = 2
         let calculatedWidth = width / CGFloat(itemsCount)
         return CGSize(width: calculatedWidth, height: collectionView.frame.height)
